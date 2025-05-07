@@ -1,50 +1,11 @@
-# Welcome to your Expo app 👋
+# Input
+The program accepts user input through a text field, where users can type their tasks. This input is captured using a TextInput component and stored in the app’s state as inputValue. When the user presses the “Done” button or taps the submit button, the task is validated (to ensure it's not empty) and then added to the todos array with a unique index.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Process
+The application manages tasks using a state-driven process. When a task is submitted, it’s added to the list with a complete flag set to false. Users can toggle completion status or delete tasks. A filtering mechanism is in place, controlled via tab selection, to show “All,” “Active,” or “Complete” tasks.
 
-## Get started
+# Output
+The tasks are rendered on-screen according to the selected filter.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Note: On the mobile version (using Expo), the tabs were not visible, so it wasn’t possible to verify the “Complete” tab functionality. The web version, however, worked as expected.
